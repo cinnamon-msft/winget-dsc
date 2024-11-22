@@ -3,7 +3,7 @@
 ###########################################################################
 # This configuration will apply Windows settings to turn the machine into #
 # a presentation-ready state.                                             #
-# PowerShell module: Microsoft.Windows.Developer (v0.1.3-alpha)           #
+# PowerShell module: Microsoft.Windows.Developer (v0.2.2-alpha)           #
 ###########################################################################
 
 properties:
