@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+###########################################################################
+# This configuration will apply Windows settings to turn the machine into #
+# a presentation-ready state.                                             #
+# PowerShell module: Microsoft.Windows.Developer (v0.1.3-alpha)           #
+###########################################################################
+
+properties:
+  resources:
+  # Taskbar - Widgets: disabled
+    - resource: Microsoft.Windows.Developer/Taskbar
+      directives:
+        description: Hide widgets in Taskbar
+        allowPrerelease: true
+      settings:
+        WidgetsButton: Hide
+  configurationVersion: 0.2.0
+
+
+# Show time and date in system tray: disabled
+# Scale: 125%
+# Display resolution: 1920 x 1080
+# Start - Show recently added apps: disabled
+# Start - Show most used apps: disabled
+# Start - Show recommended files in Start, recent files in File Explorer, and items in Jump Lists: disabled
+# Start - Show recommendations for tips, shortcuts, new apps, and more: disabled
+# Start - Show account-related notifications: disabled
+# Battery Power Mode Plugged in: Best performance
+# Battery Power Mode On battery: Best performance
+# Notifications - Do Not Disturb: enabled
+# Mouse pointer - Size: 3
+# Windows Update - Pause updates: Pause for 1 week
+# File Explorer - Show recently used files: disabled
+# File Explorer - Show frequently used folders: disabled
+# File Explorer - Show recommended section: disabled
+# File Explorer - Include account-based insights, recent, favorite, and recommended files: disabled
+
+# Terminal font size: 16 px
+# VS Code font size: 16 px
+# VS font size: 16 px
+# PowerToys ZoomIt: Enabled
